@@ -1,7 +1,7 @@
 {
   "name": "learnwebpack5",
   "version": "1.0.0",
-  "homepage": "https://NataDent.github.io/learnWebpack5",
+  "homepage": "https://NataDent.github.io/my-resume",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --mode development",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NataDent/learnWebpack5.git"
+    "url": "git+https://github.com/NataDent/my-resume.git"
   },
   "keywords": [],
   "author": "Nataliia Cherkashyna <cherkashyna.n@gmail.com>",
