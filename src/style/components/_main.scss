@@ -1,7 +1,11 @@
 .main {
     @include flex-column;
     gap: $space-s;
-    padding: $space-xs $space-m;;
+     padding:  $space-xs 0;
+
+     @media screen and (min-width: 768px) {
+        padding:  $space-xs $space-m;;
+     }
 }
 
 .section{
@@ -10,11 +14,26 @@
 .container{
     @include flex-column;
     gap: $space-s;
-    padding: 0 $space-xs;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 $space-xs;
+    } 
+}
+
+.first-name{
+    display: block;
+    margin-bottom: $space-xxs;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-bottom: 0;
+    }
 }
 
 .name{
     @include title-1;
+    text-wrap: nowrap;
     font-family: $font-family;
 }
 
@@ -54,5 +73,6 @@
 }
 
 .text-L{
-    @include link-text;
+    @include text;
+    font-style: 20px;
     }

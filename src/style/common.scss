@@ -3,6 +3,7 @@
 }
 
 body {
+    @include flex-center;
     background-color: #fff;
     font-family: $font-family;
 }
@@ -26,6 +27,7 @@ h1, h2, h3 {
 }
 
 .content{
+    min-width: 400px;
     background: $bg;
     margin: 0 auto;
     padding: $space-s $space-m; 

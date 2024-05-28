@@ -1,5 +1,6 @@
 .header{
     @include flex-center;
+    min-width: 400px;
     flex-direction: row;
     justify-content: space-between;
     gap: $space-s;
@@ -14,8 +15,22 @@
 }
 
 .logo{
-    width: 56px;
-    height: 56px;
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width:768px) {
+        width: 56px;
+        height: 56px;     
+    }
+   
+}
+
+.box{
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .header-text{
