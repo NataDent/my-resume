@@ -1,0 +1,18 @@
+.sidebar {
+    @include flex-column;
+    background-color: $purple;
+    padding:  $space-xs;
+    color: $white;
+    
+}
+
+.my-photo{
+    display: block;
+    width: 200px;
+    height: 300px;
+
+    border: 1px solid $black;
+    border-radius: 50%;
+    overflow: hidden; 
+    position: relative;
+}

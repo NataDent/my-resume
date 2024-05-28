@@ -1,0 +1,26 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: $space-s;
+  }
+
+  @mixin btn {
+    display: flex;
+    gap: $space-xxs;
+    background-color: $purple;
+    color:white;
+    padding: $space-xs $space-xxs;
+    border: 1px solid $black;
+    border-radius: $space-s;
+
+    &:hover{
+        background-color: #7d2bdb;
+        box-shadow: $box-shadow;
+    }
+  }
