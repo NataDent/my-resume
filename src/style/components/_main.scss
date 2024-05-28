@@ -1,0 +1,58 @@
+.main {
+    @include flex-column;
+    gap: $space-s;
+    padding: $space-xs $space-m;;
+}
+
+.section{
+    padding: $space-l 0;
+}
+.container{
+    @include flex-column;
+    gap: $space-s;
+    padding: 0 $space-xs;
+}
+
+.name{
+    @include title-1;
+    font-family: $font-family;
+}
+
+.profession{
+    @include title-2;
+}
+
+.section-title {
+    @include title-3;
+}
+
+.section ol {
+    @include flex-column;
+}
+
+.projects-link{
+    font-family: $font-family;
+    color: currentColor;
+    text-transform: capitalize;
+
+    &:hover, &:focus {
+        color: $bright-purple;
+        font-weight: bold;
+    }
+}
+
+.projects-link-text{
+   @include link-text;
+}
+.tech-name{
+    @include text;
+    text-transform: capitalize;
+}
+
+.text{
+    @include text;
+}
+
+.text-L{
+    @include link-text;
+    }

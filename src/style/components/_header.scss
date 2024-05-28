@@ -8,6 +8,11 @@
     box-shadow: $box-shadow;
 }
 
+.logo-box{
+    @include flex-center;
+    gap: $space-xxs;
+}
+
 .logo{
     width: 56px;
     height: 56px;
@@ -16,6 +21,16 @@
 .header-text{
     display: block;
     color: $black;
+   
+}
+
+.nav-contacts{
+
+    display: none;
+}
+
+.nav-btn{
+  @include btn;   
 }
 
 .header-btn {
@@ -29,6 +44,8 @@
         display: inline-block;
         width: $space-s;
         height: $space-s;
+        width: $space-xs;
+        height: $space-xs;
         
         img {
             width: 100%;

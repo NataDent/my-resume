@@ -17,13 +17,29 @@
 </head>
 
 <body>
-    <div class="content">
+    <div class="wrapper">
+
+        <!-- header -->
+
         <header class="header">
-            <div class="logo">
-                <img src="../src/img/favicon.svg" alt="logo">
+            <div class="logo-box">
+                <div class="logo">
+                    <img src="../src/img/favicon.svg" alt="logo">
+                </div>
+                <a href="https://git.io/typing-svg"><img
+                        src="https://readme-typing-svg.herokuapp.com?font=Lobster&size=24&pause=3001&color=8F7EAF&center=true&vCenter=true&random=false&width=200&lines=Nice+to+meet+you!+"
+                        alt="Typing SVG" /></a>
             </div>
 
-            <p class="header-text">Nice to meet you!</p>
+            <button type="button" class="nav-btn"> my contacts</button>
+
+            <nav class="nav-contacts">
+                <a href="mailto:cherkashyna.n@gmail.com" class="nav-link link">cherkashyna.n@gmail.com</a>
+                <a href="tel:380634017617" class="nav-link link">+38 063 401 76 17</a>
+                <a href="https://t.me/n_cherkashyna" class="nav-link link">telegram</a>
+                <a href="http://www.linkedin.com/in/nataliia-cherkashyna-046a29169" class="nav-link link">linkedIn</a>
+                <a href="https://github.com/NataDent" class="nav-link link">github</a>
+            </nav>
 
             <a href="../src/static/cherkashyna_resume.pdf" download="cherkashyna_resume.pdf" class="header-btn">
                 <div class="icon">
@@ -33,39 +49,52 @@
             </a>
         </header>
 
-        </header>
+        <!-- content -->
 
-        <!-- main container -->
+        <div class="content">
 
-        <div class="wrapper">
+            <!-- sidebar -->
+
             <aside class="sidebar">
+
+                <!-- picture -->
                 <div class="my-photo">
                     <img src="./img/IMG_4721 (cut-min).jpg" alt="my photo">
                 </div>
 
                 <!-- contacts container -->
-                <div class="contacts-container">
-                    <h3 class="contacts-title">Contacts</h3>
-
-                    <div>
-                        <span class="contacts-link-type">C:</span>
-                        <a class="contacts-link" href="tel:380634017617">+38 063 401 76 17</a>
-                    </div>
-                    <div>
-                        <span class="contacts-link-type">E:</span>
-                        <a class="contacts-link" href="mailto:cherkashyna.n@gmail.com">cherkashyna.n@gmail.com</a>
-                    </div>
+                <div class="sidebar-container">
+                    <h3 class="sidebar-title">contact information</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <a href="mailto:cherkashyna.n@gmail.com"
+                                class="contacts-link link">cherkashyna.n@gmail.com</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="tel:380634017617" class="contacts-link link">+38 063 401 76 17</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="https://t.me/n_cherkashyna" class="contacts-link link">telegram</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="http://www.linkedin.com/in/nataliia-cherkashyna-046a29169"
+                                class="contacts-link link">linkedIn</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="https://github.com/NataDent" class="contacts-link link">github</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Tech skills container -->
-                <div class="tech-skills-container">
-                    <h3 class="tech-skills-title">tech skills</h3>
+                <div class="sidebar-container">
+                    <h3 class="sidebar-title">tech skills</h3>
                     <ul>
                         <li class="tech-skills-item">
                             <span class="tech-skills-text">html/css/sass</span>
                         </li>
                         <li class="tech-skills-item">
-                            <span class="tech-skills-text">Responsive/adaptive design</span>
+                            <span class="tech-skills-text">responsive/adaptive design</span>
                         </li>
                         <li class="tech-skills-item">
                             <span class="tech-skills-text">git/github</span>
@@ -104,27 +133,24 @@
                 </div>
 
                 <!-- Soft skills container -->
-                <div class="tech-skills-container">
-                    <h3 class="tech-skills-title">soft skills</h3>
+                <div class="sidebar-container">
+                    <h3 class="section-title">soft skills</h3>
                     <ul>
-                        <li class="tech-skills-item">
-                            <span class="tech-skills-text">scrum</span>
-                        </li>
-                        <li class="tech-skills-item">
-                            <span class="tech-skills-text">agile</span>
-                        </li>
-                        <li class="tech-skills-item">
-                            <span class="tech-skills-text">gTD</span>
-                        </li>
-                        <li class="tech-skills-item">
-                            <span class="tech-skills-text">teamwork</span>
-                        </li>
+                        <li class="tech-skills-item">scrum</li>
+                        <li class="tech-skills-item">agile</li>
+                        <li class="tech-skills-item">gTD</li>
+                        <li class="tech-skills-item">teamwork</li>
+                        <li class="sidebar-list-item">organized</li>
+                        <li class="sidebar-list-item">versatile</li>
+                        <li class="sidebar-list-item">flexible</li>
+                        <li class="sidebar-list-item">eager to learn</li>
+                        <li class="sidebar-list-item">persistent</li>
                     </ul>
                 </div>
 
                 <!-- languages container -->
-                <div class="languages-container">
-                    <h3 class="languages-title">languages</h3>
+                <div class="sidebar-container">
+                    <h3 class="section-title">languages</h3>
                     <ul>
                         <li class='languages-list-item'>english - upper-intermediate</li>
                         <li class='languages-list-item'>ukrainian - native</li>
@@ -135,41 +161,40 @@
                 </div>
             </aside>
 
-            <!-- about me container -->
-            <section class="about-me-container">
+
+            <!-- main container -->
+            <main class="main">
                 <!-- about me main info -->
-                <div class="info-container">
+                <section class="section container">
                     <h1 class="name">nataliia cherkashyna</h1>
                     <h2 class="profession">full stack javaScript developer</h2>
-                    <h3>summary</h3>
-                    <p class="description">I am a confident Front-End developer with knowledge of HTML/CSS, JavaScript,
+                    <h3 class="section-title">summary</h3>
+                    <p class="text-L">I am a confident Front-End developer with knowledge of HTML/CSS, JavaScript,
                         TypeScript, React/Redux, Next.JS, NodeJS, Nest.JS. I have a proven track record of using
                         Agile/Scrum methodology to deliver projects on time, work as a team and focus on
                         user-friendliness. I quickly adapt to dynamics of the environment and constructively solve
                         problems and challenges that arise through a balance between work and daily life. I strive to
                         acquire new knowledge and effectivly apply it in practice. I'm a responsible and punctual
                         worker.</p>
-                </div>
+                </section>
 
                 <!-- projects container -->
-                <div class="projest-container">
-                    <h3 class="about-me-title">project experience</h3>
+                <section class="section container">
+                    <h3 class="section-title">project experience</h3>
                     <ol>
-                        <li class="projects-item">
+                        <li>
                             <a class="projects-link" href="https://rostyslav-stetsyk.github.io/project-group-15/">
-                                <span class='projects-link-text'>the watchspot, </span>
-                            </a>
+                                <span class='projects-link-text'>the watchspot,</span> </a>
                             <a href="https://github.com/Rostyslav-Stetsyk/project-group-15" class="projects-link">
-                                <span class='projects-link-text'>gh-link</span>
-                            </a>
+                                gh-link</a>
 
                             <span><b>[</b> <span class="tech-name">html, sass, js, parcel</span> <b>]</b></span>
-                            <span class="tach-name">group project</span>
-                            <p class="project-description">A website with a responsive layout. Role: developer.
+                            <span class="text">Group project.</span>
+                            <p class="text">A website with a responsive layout. Role: developer.
                             </p>
                         </li>
 
-                        <li class="projects-item">
+                        <li>
                             <a class="projects-link" href="https://thegreatgrandfather.github.io/apple/index.html">
                                 <span class='projects-link-text'>the bookshop, </span>
                             </a>
@@ -178,12 +203,12 @@
                             </a>
 
                             <span><b>[</b> <span class="tech-name">html, sass, api, parcel</span> <b>]</b></span>
-                            <span class="tach-name">group project</span>
-                            <p class="project-description">A website with a responsive layout. Role: developer.
+                            <span class="text">Group project.</span>
+                            <p class="text">A website with a responsive layout. Role: developer.
                             </p>
                         </li>
 
-                        <li class="projects-item">
+                        <li>
                             <a class="projects-link" href="https://natadent.github.io/goit-react-hw-05-movies">
                                 <span class='projects-link-text'>filmoteca, </span>
                             </a>
@@ -193,15 +218,15 @@
 
                             <span><b>[</b> <span class="tech-name">html, sass, js, rest api, ajax, parcel</span>
                                 <b>]</b></span>
-                            <span class="tach-name">individual project</span>
-                            <p class="project-description">Application for choosing a movie. Role: developer.
+                            <span class="text">Individual project</span>
+                            <p class="text">Application for choosing a movie. Role: developer.
                             </p>
-                            <p class="project-description">App component with Public and Private routes, AuthPage page
+                            <p class="text">App component with Public and Private routes, AuthPage page
                                 logic.
                             </p>
                         </li>
 
-                        <li class="projects-item">
+                        <li>
                             <a class="projects-link" href="https://natadent.github.io/React-blended-03/">
                                 <span class='projects-link-text'>country search, </span>
                             </a>
@@ -212,12 +237,12 @@
 
                             <span><b>[</b> <span class="tech-name">react, javaScript, axios, rest api, parcell,
                                     @emotion/styled</span> <b>]</b></span>
-                            <span class="tach-name">group project</span>
+                            <span class="text">Group project.</span>
                             <p class="project-description">Application for searching countries. Role: developer.
                             </p>
                         </li>
 
-                        <li class="projects-item">
+                        <li>
                             <a class="projects-link" href="https://natadent.github.io/goit-react-hw-08-phonebook/">
                                 <span class='projects-link-text'>phonebook, </span>
                             </a>
@@ -228,30 +253,51 @@
                             <span><b>[</b> <span class="tech-name">react, redux, axios, rest api, parcell, chakra ui,
                                     formik, yup</span> <b>]</b></span>
                             <span>individual project</span>
-                            <p class="project-description">Application for saving phone contacts.
+                            <p class="text">Application for saving phone contacts.
                             </p>
                         </li>
+
+                        <li>
+                            <a class="projects-link"
+                                href="https://oleksiihvozdukhin.github.io/code-jedi-project-03-frontend/">
+                                <span class='projects-link-text'>tracker of water,
+                                    <a href="https://github.com/OleksiiHvozdukhin/code-jedi-project-03-frontend"
+                                        class="projects-link">
+                                        <span class='projects-link-text'>gh-link</span>
+                                    </a>
+
+                                    <span><b>[</b> <span class="tech-name">react, redux, axios, rest api, styled
+                                            components,
+                                            formik, yup</span> <b>]</b></span>
+                                    <span class="text">Group project.</span>
+                                    <p class="text">A website with a responsive layout. Role: developer.
+                                    </p>
+                        </li>
                     </ol>
-                </div>
+                </section>
 
                 <!-- Education -->
-                <div class="education-container">
-                    <h3 class="about-me-title education-title">Education</h3>
-                    <p class="univ-name">GOIT school,
-                    </p>
-                    <p class="univ-speciality">javascript web developer full stack</p>
-                    <span class="profession-time">
-                        02.2023-12.2023 <span class="profession-divider">|</span> Ukraine
-                    </span>
+                <section class="section container">
+                    <h3 class="section-title">Education</h3>
+                    <div class="text-box">
+                        <p class="text">GOIT school,
+                        </p>
+                        <p class="text">JavaScript web developer full stack</p>
+                        <p class="text">
+                            02.2023-12.2023 <span class="divider">|</span> Ukraine
+                        </p>
+                    </div>
 
-                    <p class="univ-name">Gorkiy State Medical University of Donetsk,
-                    </p>
-                    <p class="univ-speciality">Master's degree in dentistry.</p>
-                    <span class="profession-time">
-                        1985-1990 <span class="profession-divider">|</span> Ukraine
-                    </span>
-                </div>
-            </section>
+                    <div class="text-box">
+                        <p class="text">Gorkiy State Medical University of Donetsk,
+                        </p>
+                        <p class="text">Master's degree in dentistry.</p>
+                        <p class="text">
+                            1985-1990 <span class="divider">|</span> Ukraine
+                        </p>
+                    </div>
+                </section>
+            </main>
         </div>
     </div>
 </body>

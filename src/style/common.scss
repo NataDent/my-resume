@@ -17,24 +17,35 @@ h1, h2, h3 {
     text-transform: capitalize;
 }
 
-.content{
+.wrapper {
     padding: 0 $space-m;
     background: $white;
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow:$box-shadow; 
+    
 }
 
-.wrapper {
-    display: flex;
-    gap:$space-s;
+.content{
     background: $bg;
     margin: 0 auto;
-    padding: $space-xxs $space-m;
+    padding: $space-s $space-m; 
+     box-shadow:$box-shadow; 
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      gap:$space-s;  
+    } 
+}
+
+.link{
+    color: $purple;     
+    text-decoration: none;
+    text-transform: capitalize; 
+
+&:hover, &:focus {
+        color: $bright-purple;
+        font-weight: bold;
+    }
 }
 
 
-
-.container{
-    padding: $space-xxs $space-m;  
-}

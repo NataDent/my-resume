@@ -1,8 +1,10 @@
 .sidebar {
     @include flex-column;
+    gap: $space-s;
+    padding:  $space-xs $space-m;
     background-color: $purple;
-    padding:  $space-xs;
     color: $white;
+    max-width: 400px;
     
 }
 
@@ -15,4 +17,19 @@
     border-radius: 50%;
     overflow: hidden; 
     position: relative;
+}
+
+.sidebar-title{
+    @include title-3;
+}
+
+.contacts-link{
+    color: $white;
+    &:hover, &:focus{
+        color:$yellow;
+    }
+}
+
+.sidebar-container{
+    @include sidebar-container;
 }
